@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* common classes */
+.container {
+    max-width: 1284px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.common-padding {
+    padding: 100px 0;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Navbar Section */
+
+.nav-logo {
+    max-width: 257px;
+}
+
+.nav-logo>img {
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav>ul {
+    list-style-type: none;
+    display: flex;
+    flex-basis: 50%;
+    justify-content: end;
+    gap: 30px;
+    align-items: center;
+    text-transform: uppercase;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 15px;
+}
+
+.ham-menu {
+    display: none;
+}
+
+@media mainscreen and (max-width: 768px) {
+    .nav>ul {
+        display: none;
+    }
+
+    .ham-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ham-menu>i {
+        color: rgb(0, 0, 0);
+    }
+
+    .h1 {
+        font-size: 2rem;
+    }
+
+    .btn {
+        font-size: 0.09rem;
+        padding: 6px 12px;
+    }
+
+    .banner-section {
+        height: 70vh;
+    }
+
+    .book-section {
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .nav-logo {}
+}
+@media (max-width: 480px) {
+
+}
+
+
+/* Banner Section */
+
+.banner-section {
+    background: no-repeat 100% 100% / cover url(../assets/Rectangle\ 1.png);
+    min-height: calc(100vh - 120px);
+}
+
+.banner-section>div>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Lora", serif;
+    font-style: italic;
+}
+
+.banner-section>div>div>h1 {
+    font-weight: bold;
+    font-size: 60px;
+    text-align: center;
+    color: white;
+}
+
+.btn {
+    font-family: 'Nunito Sans', 'sans-serif';
+    font-weight: 700;
+    font-style: normal;
+    border-radius: 20px;
+    border: 1px solid black;
+    padding: 10px 20px;
+    background-color: #385777;
+    color: white;
+    text-transform: uppercase;
+}
+
+
+
+/* Product Section */
+
+.product-section {
+    width: 100%;
+    height: 80px;
+}
+
+
+.product-header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-header>h2 {
+    position: relative;
+    top: 0;
+    left: 0;
+    font-family: "Lora", serif;
+    margin: 30px;
+    top: 30px;
+}
+
+.product-header>a {
+    position: relative;
+    top: 0;
+    right: 0;
+}
+
+.book-section {
+    display: flex;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Queries for both 861px and 768px */
+
+@media screen and (max-width: 861px) {
+    .nav-logo>img {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav>ul {
+        display: none;
+    }
+
+    .ham-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-logo>img {
+        width: 200px;
+    }
+}
